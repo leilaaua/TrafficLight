@@ -14,13 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenLightView: UIView!
     @IBOutlet weak var startButton: UIButton!
     
-    private let alphaValue: CGFloat = 0.3
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLightView.alpha = alphaValue
-        yellowLightView.alpha = alphaValue
-        greenLightView.alpha = alphaValue
+        redLightView.alpha = 0.3
+        yellowLightView.alpha = 0.3
+        greenLightView.alpha = 0.3
         
         redLightView.backgroundColor = .red
         yellowLightView.backgroundColor = .yellow
@@ -45,16 +43,18 @@ class ViewController: UIViewController {
         
         switch currentLight {
         case .red:
-            currentLight = LightColor.yellow
+            currentLight = .yellow
             redLightView.alpha = 1
+            greenLightView.alpha = 0.3
             startButton.setTitle("NEXT", for: .normal)
         case .yellow:
-            currentLight = LightColor.green
-            redLightView.alpha = alphaValue
+            currentLight = .green
+            redLightView.alpha = 0.3
             yellowLightView.alpha = 1
         case .green:
-            yellowLightView.alpha = alphaValue
+            yellowLightView.alpha = 0.3
             greenLightView.alpha = 1
+            currentLight = .red
         }
     }
 }

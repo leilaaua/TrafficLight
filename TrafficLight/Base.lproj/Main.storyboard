@@ -16,11 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BD1-sb-2IF">
+                                <rect key="frame" x="142" y="64" width="130" height="440"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdk-sK-9Jo">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="126.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivo-m7-yHS">
+                                        <rect key="frame" x="0.0" y="156.5" width="130" height="127"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLq-qr-0yl">
+                                        <rect key="frame" x="0.0" y="313.5" width="130" height="126.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="163-F5-VQ9"/>
+                                    <constraint firstAttribute="height" constant="440" id="uah-uX-kYp"/>
+                                </constraints>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMh-Vj-iXX">
-                                <rect key="frame" x="162" y="733" width="98" height="30"/>
+                                <rect key="frame" x="157" y="794" width="100" height="48"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="jkH-IK-qWx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="c8w-FB-pdq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="START">
@@ -30,46 +51,21 @@
                                     <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rhJ-7X-V0w"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BD1-sb-2IF">
-                                <rect key="frame" x="147" y="168" width="128" height="416"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdk-sK-9Jo">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivo-m7-yHS">
-                                        <rect key="frame" x="0.0" y="144" width="128" height="128"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLq-qr-0yl">
-                                        <rect key="frame" x="0.0" y="288" width="128" height="128"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Ivo-m7-yHS" firstAttribute="top" secondItem="BD1-sb-2IF" secondAttribute="top" constant="144" id="a4a-WN-tjA"/>
-                                    <constraint firstItem="Ivo-m7-yHS" firstAttribute="centerY" secondItem="BD1-sb-2IF" secondAttribute="centerY" id="jgo-z3-DpT"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="BD1-sb-2IF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="9JX-KC-nqf"/>
-                            <constraint firstItem="EMh-Vj-iXX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="CAJ-BJ-nvA"/>
-                            <constraint firstItem="EMh-Vj-iXX" firstAttribute="centerX" secondItem="BD1-sb-2IF" secondAttribute="centerX" id="GFD-YC-azi"/>
-                            <constraint firstItem="BD1-sb-2IF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="LbR-jP-Vp2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BD1-sb-2IF" secondAttribute="trailing" constant="139" id="OOZ-Pn-7TJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EMh-Vj-iXX" secondAttribute="bottom" constant="99" id="Rqr-DI-jQw"/>
-                            <constraint firstAttribute="bottom" secondItem="BD1-sb-2IF" secondAttribute="bottom" constant="312" id="YSY-VP-wfA"/>
-                            <constraint firstItem="BD1-sb-2IF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="kTA-7y-MnC"/>
+                            <constraint firstItem="BD1-sb-2IF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7YG-4l-fm6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EMh-Vj-iXX" secondAttribute="bottom" constant="20" id="jLN-WY-EjL"/>
+                            <constraint firstItem="BD1-sb-2IF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRf-z3-OUK"/>
+                            <constraint firstItem="EMh-Vj-iXX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wbz-Ka-rLZ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenLightView" destination="YLq-qr-0yl" id="i4o-Uv-SRZ"/>
-                        <outlet property="redLightView" destination="xdk-sK-9Jo" id="rUJ-jU-7HP"/>
+                        <outlet property="greenLightView" destination="YLq-qr-0yl" id="5IW-hz-JcZ"/>
+                        <outlet property="redLightView" destination="xdk-sK-9Jo" id="ktk-ks-M65"/>
                         <outlet property="startButton" destination="EMh-Vj-iXX" id="SQk-Kq-2XE"/>
-                        <outlet property="yellowLightView" destination="Ivo-m7-yHS" id="gSi-8S-WUw"/>
+                        <outlet property="yellowLightView" destination="Ivo-m7-yHS" id="Pqd-Fz-EhO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
