@@ -17,24 +17,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BD1-sb-2IF">
-                                <rect key="frame" x="142" y="64" width="130" height="440"/>
+                                <rect key="frame" x="119.5" y="64" width="175" height="592.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdk-sK-9Jo">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="126.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="177.5"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivo-m7-yHS">
-                                        <rect key="frame" x="0.0" y="156.5" width="130" height="127"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="207.5" width="175" height="177.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLq-qr-0yl">
-                                        <rect key="frame" x="0.0" y="313.5" width="130" height="126.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="415" width="175" height="177.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="163-F5-VQ9"/>
-                                    <constraint firstAttribute="height" constant="440" id="uah-uX-kYp"/>
+                                    <constraint firstAttribute="width" secondItem="BD1-sb-2IF" secondAttribute="height" multiplier="130:441" id="CpZ-xO-AIt"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMh-Vj-iXX">
@@ -56,6 +55,7 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="BD1-sb-2IF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7YG-4l-fm6"/>
+                            <constraint firstItem="BD1-sb-2IF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.661169" id="i0c-T3-HBX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EMh-Vj-iXX" secondAttribute="bottom" constant="20" id="jLN-WY-EjL"/>
                             <constraint firstItem="BD1-sb-2IF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRf-z3-OUK"/>
                             <constraint firstItem="EMh-Vj-iXX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wbz-Ka-rLZ"/>
@@ -80,8 +80,14 @@
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
