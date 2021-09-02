@@ -20,18 +20,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     private var currentLight = LightColor.red
+    
     private var lightIsOn : CGFloat = 1
     private var lightIsOff : CGFloat = 0.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         startButton.layer.cornerRadius = 10
         
         redLightView.alpha = lightIsOff
         yellowLightView.alpha = lightIsOff
         greenLightView.alpha = lightIsOff
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -39,7 +38,6 @@ class ViewController: UIViewController {
         yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
         greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
     }
-    
     
     @IBAction func startButtonPressed() {
         startButton.setTitle("NEXT", for: .normal)
