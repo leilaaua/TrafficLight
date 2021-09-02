@@ -40,7 +40,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startButtonPressed() {
-        startButton.setTitle("NEXT", for: .normal)
+        if startButton.currentTitle == "START" {
+            startButton.setTitle("NEXT", for: .normal)
+        }
         
         switch currentLight {
         case .red:
